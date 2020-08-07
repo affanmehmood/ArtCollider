@@ -1,0 +1,76 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+    <body>
+        <header>
+<div class="container bootstrap snippets">
+<div class="row">
+  <div class="col-xs-12 col-sm-9">
+    <form class="form-horizontal">
+      <div class="panel-heading">
+      <h4 class="panel-title">Profile Picture</h4>
+      </div>
+        <div class="panel panel-default">
+          <div class="panel-body text-center">
+           <img src="https://scontent.fisb5-1.fna.fbcdn.net/v/t31.0-8/25488380_820469941448201_1518427100470079376_o.jpg?_nc_cat=104&_nc_sid=a4a2d7&_nc_ohc=Apbn0LtqjSgAX-tzF3M&_nc_ht=scontent.fisb5-1.fna&oh=28336efb4de7edf5c23208321f17d286&oe=5F041241"
+            class="profile-avatar" alt="User avatar">
+          </div>
+        </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+        <h4 class="panel-title">User info</h4>
+        </div>
+        <div class="panel-body">
+          <div class="form-group">
+            <label class="col-sm-2 control-label">Location</label>
+            <div class="col-sm-10">
+              <select class="form-control">
+                <option selected="">Pakistan</option>
+                <option>Belgium</option>
+                <option>Canada</option>
+                <option>Denmark</option>
+                <option>Estonia</option>
+                <option>France</option>
+              </select>
+            </div>
+          </div>
+            <label class="col-sm-2 control-label">Job Title</label>
+            <div class="col-sm-10">
+              <input [(ngModel)]="jobTitle" type="text" name="job" class="form-control">
+            </div>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+            <label class="col-sm-2 control-label">Bio</label>
+            <div class="col-sm-10">
+              <textarea [(ngModel)]="bio" name="bio" rows="3" class="form-control"></textarea>
+            </div>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+        <h4 class="panel-title">Privacy</h4>
+        </div>
+        <div class="panel-body">
+          <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox_1">
+                <label for="checkbox_1"> Public Account</label>
+              </div>
+            </div>
+          </div>
+              <button type="submit" (click)="updateProfile()" class="btn-submit">Update</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+
+</header>
+</body>
+</html>

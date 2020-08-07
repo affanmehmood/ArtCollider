@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <header>
+            <div id="login-box" class="main-div">
+                  <h1>Create your Account</h1>
+                    
+                    <input  [(ngModel)]="username"   type="text" name="username" placeholder="Username"/>
+                    <input  [(ngModel)]="email"  type="text" name="email" placeholder="Email"/>
+                    <input  [(ngModel)]="password"   type="password" name="password" placeholder="Password"/>
+                  
+                    <input [(ngModel)]="password_re"   type="password" name="password2" placeholder="Retype password"/>
+                  
+                    <input type="submit" (click) = "submit()" name="signup-button" value="Sign Up" class="submit-btn"/>
+                
+              </div>
+        </header>
+    </body>
+</html>

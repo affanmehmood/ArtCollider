@@ -1,0 +1,44 @@
+<div class="card">
+    <div class="card-header"
+      style="background-image:
+      url(https://scontent.fisb5-1.fna.fbcdn.net/v/t31.0-8/25488380_820469941448201_1518427100470079376_o.jpg?_nc_cat=104&_nc_sid=a4a2d7&_nc_ohc=Apbn0LtqjSgAX-tzF3M&_nc_ht=scontent.fisb5-1.fna&oh=28336efb4de7edf5c23208321f17d286&oe=5F041241)">
+          <div class="card-header-slanted-edge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200"><path class="polygon" d="M-20,200,1000,0V200Z" /></svg>
+              <a href="#" class="btn-follow"><span class="sr-only">Follow</span></a>
+          </div>
+    </div>
+
+    <div class="card-body">
+        <h2 class="name">{{username}}</h2>
+        <h4 class="job-title">{{jobTitle}}</h4>
+        <div class="bio">{{bio}}</div>
+        <div class="social-accounts">
+          <a href="#"><img src="https://res.cloudinary.com/dj14cmwoz/image/upload/v1491077480/profile-card/images/dribbble.svg" alt=""><span class="sr-only">Dribbble</span></a>
+          <a href="#"><img src="https://res.cloudinary.com/dj14cmwoz/image/upload/v1491077480/profile-card/images/twitter.svg" alt=""><span class="sr-only">Twitter</span></a>
+          <a href="#"><img src="https://res.cloudinary.com/dj14cmwoz/image/upload/v1491077480/profile-card/images/instagram.svg" alt=""><span class="sr-only">Instagram</span></a>
+        </div>
+    </div>
+
+    <div>
+      <button (click)="openEditProfile()" class="editprofilebtn">
+        EDIT PROFILE
+      </button>
+    </div>
+    
+    <div class="card-footer">
+        <div class="stats">
+            <div class="stat">
+              <span class="label">Following</span>
+              <span class="value">{{followingCount}}</span>
+            </div>
+            <div class="stat">
+              <span class="label">Followers</span>
+              <span class="value">{{followerCount}}</span>
+            </div>
+            <div class="stat">
+              <span class="label">Likes</span>
+              <span class="value">{{likeCount}}</span>
+            </div>
+        </div>
+    </div>
+</div>

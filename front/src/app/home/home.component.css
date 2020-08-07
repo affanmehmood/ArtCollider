@@ -1,0 +1,25 @@
+.topic{
+    z-index: 2;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .human{
+    font-size: 100px;
+    color: #f1cf0a;
+    font-family:  sans-serif;
+    float: left;
+  }
+  .ai{
+    font-size: 100px;
+    color: black;
+    font-family: sans-serif;
+    float: right;
+    margin-left: 40px;
+  }
+  .collab{
+    font-size: 36px;
+    color: #f1cf0a;
+    font-family:  sans-serif;
+  }

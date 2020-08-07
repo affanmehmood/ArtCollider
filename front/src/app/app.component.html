@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div class="overlay">
+      <div class="black-overlay"></div>
+      <div class="primary-overlay"></div>
+    </div>
+    <div class="backgroundImg"></div>
+    <header>
+      <div class="menu">
+        <div class="main-text">
+          DEEP ART COLLIDER
+          <h1 class="hr1"></h1>
+      </div>
+      <div>
+        <ul class="list1">
+          <li><a (click) = "mainNav('home')">HOME</a></li>
+          <li><a (click) = "mainNav('gallery')">GALLERY</a></li>
+          <li><a (click) = "scrollTools()">TOOLS</a></li>
+        </ul>
+        <ul class="list2">
+          <li><a *ngIf = "!mode" (click) = "mainNav('login')">LOGIN</a></li>
+          <li><a *ngIf = "!mode" (click) = "mainNav('signup')">SIGNUP</a></li>
+          <li><a *ngIf = "mode" (click) = "mainNav('profile')">{{username}}</a></li>
+          <li><a >CONTACT</a></li>
+          <li><a *ngIf = "mode" (click) = "mainNav('signout')">SIGNOUT</a></li>
+       </ul>
+        </div>
+      </div>
+    </header>
+    <ng-container *ngComponentOutlet="mainCompCont"></ng-container>
+  </body>
+  <div class="app-tools-div">
+    <app-tools></app-tools>
+  </div>
+</html>
