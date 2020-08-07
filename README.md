@@ -1,8 +1,7 @@
-# GoPlay
-This App allows you to find other teams based on your area, and you can also book venues to play in.
-There are 2 main modules in this app, one for the venue and other for the teams.
-Teams can send requests to other teams and also to the venue for booking.<br />
-You can also sign in with email, a google account and anonymously.<br />
+# ArtColider
+This App allows users to collaborate and create art. User can post a picture on their profile
+apply filters using the given tools, and use other people's public art to transfer that style into their own 
+image using StyleGans <br />
 **A few of the screenshots are as following:**
 
    Home Page            
